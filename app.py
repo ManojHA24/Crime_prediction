@@ -21,11 +21,11 @@ def predict():
     output=model.predict(final)
 
     if output==0:
-        return render_template('crime_pred.html',pred='Less crime ,Happy journey (crime less than 13) {}'.format(output),bhai="moderate crime")
+        return render_template('crime_pred.html',pred='Less crime ,Happy journey (crime less than 13) {}'.format(output))
     elif output==1:
-        return render_template('crime_pred.html',pred='Moderate crime, be precautious {}'.format(output),bhai="moderate crime")
+        return render_template('crime_pred.html',pred='Moderate crime, be precautious {}'.format(output))
     else:
-        return render_template('crime_pred.html',pred='High crime rate,change your time travel {}'.format(output),bhai="high crime")
+        return render_template('crime_pred.html',pred='High crime rate,change your time travel {}'.format(output))
         
 
 
