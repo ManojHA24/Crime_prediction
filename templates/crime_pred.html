@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Crime Prediction</title>
+
+  <!-- CSS  -->
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>--> 
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Crime Prediction</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of Crime Occurence at your destination
+        <br>
+        </h5>
+      </div>
+
+    <form action='/predict' method="post" class="col s12">
+      
+          <label for="month"><b>Month </b></label>
+            <br>
+          <input id="month" name="month" placeholder="Enter Month"  type="text">
+          <br>
+          <label for="day"><b>Day</b></label>
+            <br>
+          <input id="day" name="day" placeholder="Enter Day" type="text" class="validate">
+          <br>
+          <label for="time"><b>Time</b></label>
+            <br>
+          <input placeholder="Enter Time" name="time" id="time" type="text">
+          <br>
+          <label for="district"><b>Day</b></label>
+            <br>
+          <input id="district" name="district" placeholder="Enter District" type="text">
+          <br>
+          <h4> Predict Probability </h4>
+          <input type="submit"></input>
+
+    </form>
+      </div>
+
+  
+       <p> {{pred}} </p>
+      
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>
+
+
+  <!--  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script> -->
+
+  </body>
+</html>
+
